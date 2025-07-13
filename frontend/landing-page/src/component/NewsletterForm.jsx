@@ -12,7 +12,7 @@ const NewsletterForm = () => {
     e.preventDefault();
     setStatus("");
     try {
-      const res = await axios.post("http://localhost:7000/api/newsletter/add", {
+      const res = await axios.post("https://real-trust-2yfz.onrender.com/api/newsletter/add", {
         email,
       });
 
