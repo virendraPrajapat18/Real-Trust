@@ -30,7 +30,7 @@ const ClientSection = () => {
               className="min-w-[280px] max-w-[280px] bg-blue-50 p-6 rounded-xl shadow-lg text-center flex-shrink-0 snap-start"
             >
               <img
-                src={`http://localhost:7000/uploads/${client.image}`}
+                src={`https://real-trust-2yfz.onrender.com/uploads/${client.image}`}
                 alt={client.name}
                 className="w-24 h-24 rounded-full object-cover mx-auto mb-4 border-4 border-white shadow-md"
               />
