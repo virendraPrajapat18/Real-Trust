@@ -7,7 +7,7 @@ const ProjectSection = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:7000/api/projects/get") // ✅ replace with your real backend URL
+      .get("https://real-trust-2yfz.onrender.com/api/projects/get") // ✅ replace with your real backend URL
       .then((res) => setProjects(res.data.data))
       .catch((err) => console.error("Failed to fetch projects", err));
   }, []);
@@ -31,7 +31,7 @@ const ProjectSection = () => {
             className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col"
           >
             <img
-              src={`http://localhost:7000/uploads/${project.image}`}
+              src={`https://real-trust-2yfz.onrender.com/uploads/${project.image}`}
               alt={project.name}
               className="w-full h-48 object-cover"
             />
