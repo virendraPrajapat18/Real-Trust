@@ -16,7 +16,7 @@ const Client = () => {
 
   const fetchClients = async () => {
     try {
-      const res = await axios.get("http://localhost:7000/api/clients/get");
+      const res = await axios.get("https://real-trust-2yfz.onrender.com/api/clients/get");
       setClients(res.data.data); 
     } catch (error) {
       console.error("Failed to load clients:", error);
@@ -44,7 +44,7 @@ const Client = () => {
     form.append("image", formData.image);
 
     try {
-      await axios.post("http://localhost:7000/api/clients/add", form);
+      await axios.post("https://real-trust-2yfz.onrender.com/api/clients/add", form);
       alert("Client added successfully!");
       setFormData({ name: "", designation: "", description: "", image: null });
       fetchClients();
