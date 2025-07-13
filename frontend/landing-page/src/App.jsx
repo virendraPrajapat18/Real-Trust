@@ -2,7 +2,7 @@
 // import './App.css'
 import Form from './component/Form'
 import IntroSection from './component/IntroSection'
-import Navbar from './component/navbar'
+import Navbar from './component/Navbar'
 import DesignShowcase from './component/DesignShowcase'
 import WhyChooseUs from './component/WhyChooseUs'
 import AboutUs from './component/AboutUs'
