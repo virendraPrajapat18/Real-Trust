@@ -6,7 +6,7 @@ const ClientSection = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:7000/api/clients/get") 
+      .get("https://real-trust-2yfz.onrender.com/api/clients/get") 
       .then((res) => setClients(res.data.data))
       .catch((err) => console.error("Error fetching clients", err));
   }, []);
