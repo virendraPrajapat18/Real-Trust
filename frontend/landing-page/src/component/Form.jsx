@@ -22,7 +22,7 @@ const HeroSection = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post("http://localhost:7000/api/contacts/add", form, {
+      await axios.post("https://real-trust-2yfz.onrender.com/api/contacts/add", form, {
         headers: { "Content-Type": "application/json" },
       });
       alert("Form submitted successfully!");
