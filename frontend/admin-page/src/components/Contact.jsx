@@ -15,7 +15,7 @@ const ContactAdminPage = () => {
 
   const fetchContacts = async () => {
     try {
-      const res = await axios.get("http://localhost:7000/api/contacts/get");
+      const res = await axios.get("https://real-trust-2yfz.onrender.com/api/contacts/get");
       setContacts(res.data.data); 
     } catch (error) {
       console.error("Error fetching contacts:", error);
