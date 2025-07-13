@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 
-const HeroSection = () => {
+const Form = () => {
   const [form, setForm] = useState({
     fullName: "",
     email: "",
@@ -129,4 +129,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Form;
