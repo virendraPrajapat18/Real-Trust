@@ -17,7 +17,7 @@ const ProjectAdminPage = () => {
   const fetchProjects = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:7000/api/projects/get"
+        "https://real-trust-2yfz.onrender.com/api/projects/get"
       );
       setProjects(res.data.data);
     } catch (error) {
@@ -48,7 +48,7 @@ const ProjectAdminPage = () => {
     form.append("image", formData.image);
 
     try {
-      await axios.post("http://localhost:7000/api/projects/add", form);
+      await axios.post("https://real-trust-2yfz.onrender.com/api/projects/add", form);
       alert("Project added successfully!");
       setFormData({ name: "", description: "", image: null });
       fetchProjects(); 
