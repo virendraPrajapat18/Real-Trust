@@ -1,6 +1,6 @@
 
 // import './App.css'
-import Form from './component/form'
+import Form from './component/Form'
 import IntroSection from './component/IntroSection'
 import Navbar from './component/navbar'
 import DesignShowcase from './component/DesignShowcase'
