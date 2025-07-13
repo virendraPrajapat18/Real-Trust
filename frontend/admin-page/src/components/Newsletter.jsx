@@ -15,7 +15,7 @@ const Newsletter= () => {
 
   const fetchSubscribers = async () => {
     try {
-      const res = await axios.get("http://localhost:7000/api/newsletter/get");
+      const res = await axios.get("https://real-trust-2yfz.onrender.com/api/newsletter/get");
       setSubscribers(res.data.data); 
     } catch (error) {
       console.error("Error fetching newsletter emails:", error);
